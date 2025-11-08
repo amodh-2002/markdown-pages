@@ -13,7 +13,7 @@ markdown: kramdown
 
 # Build settings
 baseurl: "" # leave empty for user/organization sites; set if repository is a project site
-url: "https://username.github.io" # replace with your GitHub Pages URL
+url: "https://amodh-2002.github.io" # replace with your GitHub Pages URL
 
 # Optional: Include files or directories Jekyll should process
 include:
@@ -30,3 +30,5 @@ plugins:
 
 # Optional: Enable syntax highlighting
 highlighter: rouge
+
+# Trigger rebuild
