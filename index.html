@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Questions & Study Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interview Questions & Study Guide</h1>
+            <p class="subtitle">DevOps & Cloud Infrastructure Projects</p>
+        </header>
+        
+        <main>
+            <div class="cards">
+                <div class="card" onclick="loadDocumentWithHistory('fault-tolert.md')">
+                    <h2>Multi-Region AWS Infrastructure</h2>
+                    <p>Fault-tolerant, multi-region active-active architecture with Route 53, Aurora Global Database, and comprehensive security.</p>
+                    <div class="card-footer">Click to view →</div>
+                </div>
+                
+                <div class="card" onclick="loadDocumentWithHistory('Velocity.md')">
+                    <h2>Project Velocity</h2>
+                    <p>Application and Infrastructure Modernization on EKS - Containerization and CI/CD pipeline implementation.</p>
+                    <div class="card-footer">Click to view →</div>
+                </div>
+                
+                <div class="card" onclick="loadDocumentWithHistory('DMS.md')">
+                    <h2>DMS Platform</h2>
+                    <p>Infrastructure Automation - Multi-region, three-tier cloud infrastructure with Terraform and Azure DevOps.</p>
+                    <div class="card-footer">Click to view →</div>
+                </div>
+                
+                <div class="card" onclick="loadDocumentWithHistory('CaptionCraft.md')">
+                    <h2>CaptionCraft</h2>
+                    <p>AI Caption Generator - Cloud-native full-stack application with AI integration and DevOps practices.</p>
+                    <div class="card-footer">Click to view →</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <div id="document-viewer" class="document-viewer hidden">
+        <div class="viewer-header">
+            <button onclick="closeDocument()" class="back-btn">← Back to Home</button>
+            <h2 id="document-title"></h2>
+        </div>
+        <div id="document-content" class="document-content"></div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
